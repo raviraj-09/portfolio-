@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    font-family: Calibri;
+}
+
+/* Navigation bar*/
+#navbar{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    background-image: url("images/rr.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-right: 1%;
+}
+.name{
+    color: red;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-right: 30%;
+}
+#navbar a {
+    color:aliceblue;
+    font-family: Montserrat;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.2rem;
+
+}
+#navbar a:hover{
+    color: red;
+}
+
+/*Homae Page*/
+.background{
+    background-image: url(./images/black-white-background.jpg);
+    background-size: cover;
+    width: 1517x;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:2%;
+    border-radius: 100px;
+}
+.ravi{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 50px;
+}
+.web-dev{
+    font-weight: 300;
+    font-size: 25px;
+}
+.image1{
+    width: 300px;
+    height: auto;
+    border-radius: 200px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#icon{
+    text-decoration: none;
+    font-size: 40px;
+}
+.detail-side{
+    margin-right: 20%;
+}
+
+/* About page  */
+#about{
+    background-image: url(./images/about-background.jpg);
+    width:92%;
+    height: 720px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin:2%;
+    border-radius: 100px;
+}
+.myData {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 2% 1%;
+    font-size: larger;
+    color: blue;
+}
+.education{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin: 2% 1%;
+}
+table, th, td {
+    color: rgb(93, 18, 18);
+    border-collapse: collapse;
+  }
+
+  /* Skills */
+  #skills{
+    background-image: url(./images/skills-background.jpg);
+    width:96%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2%;
+    border-radius: 100px;
+  }
+  .program, .library, .tools, .others{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight:600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(181, 49, 49);
+    border-radius: 200px;
+    margin:1%;
+    padding:2%;
+    color:rgb(39, 33, 206);
+    background-color: rgba(154, 169, 214, 0.719);
+  }
+
+  /* Project section */
+  #project{
+    background-image: url(./images/project-background.jpg);
+    height: 85%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin:2%;
+  }
+  .calculator, .explore, .facebook{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin:2%;
+    padding:1%;
+  }
+  .heading{
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+  }
+  #project a{
+    display: flex-box;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: blue;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 100px;
+  }
+
+  /* contact */
+  #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(34, 30, 161);
+    background-color: rgba(210, 185, 153, 0.338);
+    border: 2px solid green;
+    border-radius: 100px;
+    margin-bottom: 10%;
+  }
+
+  /* footer */
+  footer{
+    margin-left: 85%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  @media(max-width:1024px){
+    footer{
+        margin-left: 80%;
+      }
+  }
+  @media(max-width:800px){
+    footer{
+        margin-left: 70%;
+      }
+      #navbar{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media(max-width:500px){
+    #navbar{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .background{
+        display: flex;
+        flex-direction: column;
+    }
+    #project{
+        flex-direction: column;
+        height: auto;
+      }
+}
